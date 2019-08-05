@@ -1,0 +1,25 @@
+spring:
+  jpa:
+    show-sql: true
+    properties:
+      hibernate:
+        ddl-auto: update
+        order_inserts: true
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+        jdbc:
+          batch_size: 50
+          lob:
+            non_contextual_creation: true
+        temp:
+          use_jdbc_metadata_defaults: false
+
+  datasource:
+    type: com.zaxxer.hikari.HikariDataSource
+    url: ec2-174-129-226-234.compute-1.amazonaws.com:5432/d8h5dst7et63rg?ssl=false&sslfactory=org.postgresql.ssl.NonValidatingFactory
+    driver-class-name: org.postgresql.Driver
+    username: suecwcfqunuyhf
+    password: ea18919c762dd96a31ed8b8a9d1741fb66de6d6675b6233a5033627b49424fb2
+
+logging:
+  level:
+    root: INFO
