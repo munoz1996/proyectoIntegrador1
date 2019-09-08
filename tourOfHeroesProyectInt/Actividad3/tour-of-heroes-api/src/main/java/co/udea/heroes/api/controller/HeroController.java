@@ -27,7 +27,7 @@ import io.swagger.annotations.ApiResponse;
 import io.swagger.annotations.ApiResponses;
 
 @RestController
-@RequestMapping("/tourofheroes")
+@RequestMapping("/api")
 public class HeroController {
 	
 	private final Logger log = LoggerFactory.getLogger(HeroController.class);
